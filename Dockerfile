@@ -1,6 +1,7 @@
-FROM httpd
+FROM centos
 RUN yum update -y
-RUN yum install -y zip \
+RUN yum install -y httpd \
+    zip \
     unzip
  
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page278/faster.zip /var/www/html
