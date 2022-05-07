@@ -9,5 +9,5 @@ WORKDIR /var/www/html
 RUN unzip faster.zip
 RUN cp -rvf logistics-company-website-template/* .
 RUN rm -rf logistics-company-website-template faster.zip
-CMD ["/usr/sbin/httpd", "D", "FOREGROUND"]
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
