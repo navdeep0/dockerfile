@@ -1,4 +1,4 @@
-FROM centos:7
+FROM httpd
 RUN yum install -y httpd \
  zip \
  unzip
