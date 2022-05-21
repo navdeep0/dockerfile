@@ -14,7 +14,7 @@ pipeline {
         }
         stage ('build') {
             steps {
-                sh 'sudo docker image build -t webserver'
+                sh 'sudo docker image build -t webserver  .'
             }
 
         }
