@@ -1,16 +1,17 @@
-pipeline{
-    agent{
+pipeline {
+    agent {
         
             label 'docker'
         
     }
-    stages{
+    stages {
         stage ('scm') {
-            steps{
+            steps {
               
                    sh 'sudo docker container ls'
                     
             }
+        }
         stage ('build') {
             steps {
                 sh 'sudo docker image build -t webserver'
@@ -19,9 +20,9 @@ pipeline{
         }
         stage ('deploy') {
             steps {
-                sh 'sudo docker container run -dit --name web -p 9000:80  webserver'
+                sh 'sudo docker container run -dit --name web -p 9000:80' webserver'
             }
         }
-        }
+        
     }
 }
