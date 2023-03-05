@@ -1,5 +1,5 @@
 #!/bin/bash
 sudo su
-yum install docker -y
-yum update -y
+sudo yum install docker -y
+sudo yum update -y
 echo "all done"
