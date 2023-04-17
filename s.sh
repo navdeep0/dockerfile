@@ -8,3 +8,5 @@ sudo yum install squid -y
 ls /etc
 mkdir /home/ec2-user/mkmk
 echo "all done"
+ssh -oHostKeyAlgorithms=+ssh-dss -i x.pem ec2-user@abc.com
+ssh -i x.pem -o StrictHostKeyChecking=no -t ec2-user@{variable} "sudo -i bash -c '/tmp/xyz.sh'"
