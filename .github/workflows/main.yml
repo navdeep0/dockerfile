@@ -1,0 +1,13 @@
+name: First Workflow
+
+on:
+  push:
+    branches:
+      - main # Replace with the branch you want to trigger the workflow
+
+jobs:
+  echo-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a Message
+        run: echo "Hello, GitHub Actions! This is triggered by a push.Navdeep"
