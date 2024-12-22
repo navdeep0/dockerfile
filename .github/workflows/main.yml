@@ -11,3 +11,7 @@ jobs:
     steps:
       - name: Print a Message
         run: echo "Hello, GitHub Actions! This is triggered by a push.Navdeep"
+      
+      - name: Success Message
+        if: success() # Executes only if the previous steps were successful
+        run: echo "Workflow completed successfully!"
